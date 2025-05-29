@@ -5,8 +5,9 @@ Aquí existen unos pequeños comandos utilies de casos y comandos que mes se uti
 --------------------------------------------------
 
 #1. Ver la versión de Linux
-
+```bash
 sudo lsb_release -a
+```
 sudo cat /etc/issue
 sudo uname --m  (Ver si es 32 o 64 bits)
 sudo cat /etc/SuSE-relise
