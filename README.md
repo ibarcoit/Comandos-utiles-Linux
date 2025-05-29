@@ -14,8 +14,9 @@ sudo cat /etc/issue
 ```bash
 sudo uname --m  (Ver si es 32 o 64 bits)
 ```
+```bash
 sudo cat /etc/SuSE-relise
-
+```
 
 Ejemplo:
 ```bash
