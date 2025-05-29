@@ -228,13 +228,16 @@ Editar crontab:
 sudo crontab -e
 ```
 Estructura:
+```bash
 * * * * * command_to_execute
+```
 
 Ejemplos:
+```bash
 - Diario a las 7 PM: 00 19 * * * usuario /ubicacion/script/consulta.sh
 - Domingos a las 7 PM: 00 19 * * 0 usuario /ubicacion/script/consulta.sh
 - Anual el 4 de febrero: 00 19 4 2 * usuario /ubicacion/script/consulta.sh
-
+```
 Listar tareas:
 ```bash
 sudo crontab -l
