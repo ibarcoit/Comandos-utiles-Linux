@@ -1,8 +1,6 @@
-Comandos Linux
-
-v 0.7 10-12-24
-
 CONTENIDO
+
+Aquí existen unos pequeños comandos utilies de casos y comandos que mes se utilizan en linux
 
 1. Ver la versión de Linux
 2. Ver Hardware
