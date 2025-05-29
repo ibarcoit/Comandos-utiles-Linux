@@ -67,26 +67,37 @@ sudo history -w
 #4. Servicios de Ubuntu
 
 Ver todos los servicios:
+```bash
 sudo service --status-all
-
+```
 Reiniciar servicio DHCP:
+```bash
 sudo service isc-dhcp-server restart
-
-Añadir servicio en el inicio del sistema:
-
-#1. Crear script en /etc/init.d:
+```
+#1.Añadir servicio en el inicio del sistema:
+```bash
+Crear script en /etc/init.d:
+```
+Dirigete al directorio
+```bash
 sudo cd /etc/init.d
-sudo sudo vi noip2
-
+```
+edita
+```bash
+sudo sudo nano noip2
+```
 #2. Añadir contenido:
+```bash
 #!/bin/sh sudo /usr/local/bin/noip2
-
+```
 #3. Dar permisos:
+```bash
 sudo chmod +x noip2
-
+```
 #4. Añadir a inicio:
+```bash
 sudo update-rc.d noip2 defaults
-
+```
 --------------------------------------------------
 
 #5. Samba
@@ -95,10 +106,11 @@ Instalar:
 sudo sudo apt-get install samba samba-common smbclient samba-doc smbfs
 
 Archivos importantes:
+```bash
 - Configuración: /etc/samba/smb.conf
 - Logs: /var/log/samba
 - Carpetas: /media/NAS_Stack/
-
+```
 --------------------------------------------------
 
 #6. Montar partición
