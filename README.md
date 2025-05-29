@@ -11,11 +11,17 @@ sudo lsb_release -a
 ```bash
 sudo cat /etc/issue
 ```
+```bash
 sudo uname --m  (Ver si es 32 o 64 bits)
+```
 sudo cat /etc/SuSE-relise
 
+
 Ejemplo:
+```bash
 root@ldap@li:~sudo lsb_release -a
+```
+Salida:
 No LSB modules are available.
 Distributor ID: Ubuntu
 Description: Ubuntu 18.04.3 LTS
@@ -27,26 +33,35 @@ Codename: bionic
 #2. Ver Hardware
 
 Instalar PCUtils:
+```bash
 apt install pcutils
-
+```
 Ver tarjeta gráfica:
+```bash
 lspci | grep VGA
-
+```
 Ver CPU:
+```bash
 sudo lscpu
-
+```
 --------------------------------------------------
 
 #3. Borrar historial
 
 Eliminar totalmente el historial:
+```bash
 sudo echo "" > ~/.bash_history && history -c
+```
+```bash
 sudo echo "" > ~/.bash_history && history -c && exit
-
+```
 Eliminar un comando específico:
+```bash
 sudo history -d 120
+```
+```bash
 sudo history -w
-
+```
 --------------------------------------------------
 
 #4. Servicios de Ubuntu
